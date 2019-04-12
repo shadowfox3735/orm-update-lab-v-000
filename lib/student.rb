@@ -41,7 +41,11 @@ class Student
   end
   
   def self.create
+    sql = <<-SQL
+    DROP TABLE IF EXISTS students
+    SQL
     
+    DB[:conn].execute(sql)
   end
 
 end
