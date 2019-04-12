@@ -60,7 +60,6 @@ class Student
     sql = <<-SQL
       SELECT * FROM students 
       WHERE name = ?
-      LIMIT l 
     SQL
 
     DB[:conn].execute(sql, name).map do |row|
