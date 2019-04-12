@@ -64,4 +64,8 @@ class Student
     end.first 
   end
   
+  def update
+    
+  end
+  
 end
